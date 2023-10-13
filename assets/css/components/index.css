@@ -1,0 +1,127 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 991.98px) {
+  .logo {
+    gap: 10px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+.logo__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+@media (max-width: 991.98px) {
+  .logo__title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .logo__img {
+    width: 24px;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  padding-top: 54px;
+  width: min(1240px, 100%);
+}
+.dropdown__inner {
+  --inner-padding: 30px;
+  position: relative;
+  padding: var(--inner-padding);
+  border-radius: 20px;
+  background: var(--dropdown-bg-color);
+  box-shadow: var(--dropdown-shadow-color);
+}
+.dropdown__inner::before {
+  content: url("../icon/dropdown-arrow.svg");
+  position: absolute;
+  top: -13px;
+  left: var(--arrow-left-pos);
+  translate: -50%;
+  filter: var(--dropdown-arrow-color);
+}
+
+.top-menu {
+  --main-column-width: 292px;
+  position: relative;
+}
+.top-menu__main {
+  height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  width: var(--main-column-width);
+  border-right: 1px solid var(--top-menu-border-color);
+  overflow-y: auto;
+}
+
+.menu-column {
+  display: flex;
+  gap: 14px;
+}
+.menu-column + .menu-column {
+  margin-top: var(--inner-padding);
+}
+.menu-column__icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+.menu-column__content {
+  flex: 1;
+}
+.menu-column__icon-1 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.menu-column__icon-2 {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  filter: var(--menu-item-icon-color);
+}
+.menu-column__heading {
+  margin-top: 4px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.menu-column__list {
+  margin-top: 19px;
+}
+.menu-column__link {
+  padding: 7px 0;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+.menu-column__link:hover {
+  color: #0071dc;
+  font-weight: 500;
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--main-column-width);
+  padding-left: var(--inner-padding);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--inner-padding);
+}
+
+/*# sourceMappingURL=index.css.map */
