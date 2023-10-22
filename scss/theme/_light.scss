@@ -23,4 +23,27 @@ html {
     // Sidebar
     --sidebar-bg: #fff;
     --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+
+    // Category Item
+    --cate-item-bg: #eee;
+    --cate-item-thumps-bg: #fff;
+    --cate-item-title-color: #000;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
+
+    // Button
+    --filter-btn-color: #6c6c72;
+    --filter-btn-bg: #fff;
+    --like-btn-bg: #fff;
+
+    // Product Card
+    --product-card-bg: #fff;
+    --product-card-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+    // Filter form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: 0px 40px 90px rgba(200, 200, 200, 0.4);
+    --filter-form-tag-bg: #f8f8fb;
 }

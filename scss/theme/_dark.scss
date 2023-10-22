@@ -26,4 +26,25 @@ html.dark {
     // Sidebar
     --sidebar-bg: #292e39;
     --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
+
+    // Category Item
+    --cate-item-bg: #171c28;
+    --cate-item-thumps-bg: #292e39;
+    --cate-item-title-color: #fff;
+
+    // Button
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171c28;
+    --like-btn-bg: #292e39;
+
+    // Product Card
+    --product-card-bg: #171c28;
+    --product-card-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+
+    // Filter form
+    --filter-form-bg: #292e39;
+    --filter-form-shadow: 0px 40px 90px rgba(0, 0, 0, 0.40);
+    --filter-form-tag-bg: #171c28;
+
+
 }
