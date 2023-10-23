@@ -41,3 +41,50 @@
         margin-top: 6px;
     }
 }
+
+// BUttons
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    background: #f8f8fb;
+    user-select: none;
+
+    + .btn {
+        margin-left: 20px;
+    }
+
+    &--text {
+        color: #9e9da8;
+        background: transparent;
+
+        font-weight: 400;
+    }
+
+    &--primary {
+        background: #ffb700;
+        color: #1a162e;
+    }
+
+    &--outline {
+        background: transparent;
+        border: 1px solid #d2d1d6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+    &[disabled],
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
